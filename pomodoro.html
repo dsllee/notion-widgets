@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pomodoro Timer</title>
+	<title>Minimalist Pomodoro Timer</title>
 	<style>
 		body {
-			background-color: #A9A298;
-			font-family: "Space Grotesk", sans-serif;
+			background-color: #9aa895;
 		}
 
 		.timer {
@@ -18,19 +17,17 @@
 		}
 
 		h1 {
-			font-size: 7rem;
+			font-size: 10rem;
 			font-weight: bold;
-			font-spacing: -0.25rem;
 			color: white;
 			margin-top: 0.3rem;
 			margin-bottom: 0.3rem;
-			font-variant-numeric: tabular-nums;
 		}
 
 		button {
 			font-size: 2rem;
 			color: white;
-			background-color: black;
+			background-color: #4CAF50;
 			padding: 1rem 2rem;
 			border: none;
 			border-radius: 0.5rem;
@@ -50,11 +47,8 @@
         }
 
         #pomodoro, #short-break, #long-break {
-		
-	    border-radius: 2rem;
             background-color: rgba(255, 255, 255, 0.2);
             margin: 0 0.5rem;
-	
         }
 
         .volume-control {
@@ -72,28 +66,10 @@
 </head>
 <body>
 	<div class="timer">
-	<div id="pomodoro-durations">
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="timerType" id="exampleRadios1" value="pomodoro" checked="">
-			<label class="form-check-label btn" for="exampleRadios1">
-				Pomodoro
-			</label>
-			<div class="pomo-counter">&nbsp;</div>
-		</div>
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="timerType" id="exampleRadios2" value="short">
-			<label class="form-check-label btn" for="exampleRadios2">
-				Short Break
-			</label>
-		</div>
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="timerType" id="exampleRadios3" value="long">
-			<label class="form-check-label btn" for="exampleRadios3">
-				Long Break
-			</label>
-		</div>
-	</div>
-	
+        <div class="button-container">
+            <button id="pomodoro">Pomodoro</button>
+            <button id="short-break">Short Break</button>
+            <button id="long-break">Long Break</button>
         </div>
 		<h1>25:00</h1>
 		<button id="start">Start</button>
@@ -102,7 +78,7 @@
             <label for="volume">Volume:</label>
             <input type="range" id="volume" name="volume" min="0" max="1" step="0.1" value="0.5">
             <audio id="alarm">
-                <source src="https://github.com/dsllee/notion-widgets/blob/main/theelevatorbossanova.mp3?raw=true" type="audio/mpeg">
+                <source src="PASTE THE LINK TO YOUR ALARM AUDIO FILE HERE" type="audio/mpeg">
             </audio>
         </div>
 	</div>
