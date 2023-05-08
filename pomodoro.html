@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Minimalist Pomodoro Timer</title>
+	<title>Pomodoro Timer</title>
 	<style>
 		body {
 			background-color: #A9A298;
@@ -17,17 +17,19 @@
 		}
 
 		h1 {
-			font-size: 10rem;
+			font-size: 7rem;
 			font-weight: bold;
+			font-spacing: -0.25rem;
 			color: white;
 			margin-top: 0.3rem;
 			margin-bottom: 0.3rem;
+			font-variant-numeric: tabular-nums;
 		}
 
 		button {
 			font-size: 2rem;
 			color: white;
-			background-color: #4CAF50;
+			background-color: black;
 			padding: 1rem 2rem;
 			border: none;
 			border-radius: 0.5rem;
@@ -47,8 +49,11 @@
         }
 
         #pomodoro, #short-break, #long-break {
+		
+	    border-radius: 2rem;
             background-color: rgba(255, 255, 255, 0.2);
             margin: 0 0.5rem;
+	
         }
 
         .volume-control {
